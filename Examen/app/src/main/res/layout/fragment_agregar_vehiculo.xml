@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnGuardarVehiculo"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrecioFinanciado" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="207dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/aCTtipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/aCTtipo"
+        android:layout_width="209dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/Type"
+        app:layout_constraintBottom_toTopOf="@+id/edtModelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <EditText
+        android:id="@+id/edtPrecioFinanciado"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/Pf"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardarVehiculo"
+        app:layout_constraintEnd_toEndOf="@+id/aCTtrasmision"
+        app:layout_constraintStart_toStartOf="@+id/aCTtrasmision"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrecioContado" />
+
+    <AutoCompleteTextView
+        android:id="@+id/aCTmotor"
+        android:layout_width="297dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/Engine"
+        app:layout_constraintBottom_toTopOf="@+id/aCTtrasmision"
+        app:layout_constraintEnd_toEndOf="@+id/aCTtrasmision"
+        app:layout_constraintStart_toStartOf="@+id/aCTtrasmision"
+        app:layout_constraintTop_toBottomOf="@+id/edtModelo" />
+
+    <AutoCompleteTextView
+        android:id="@+id/aCTtrasmision"
+        android:layout_width="298dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/Transmission"
+        app:layout_constraintBottom_toTopOf="@+id/swBolsasAire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aCTmotor" />
+
+    <Switch
+        android:id="@+id/swBolsasAire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/Airbags"
+        app:layout_constraintBottom_toTopOf="@+id/swFrenosABS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/swAireAcondiccionado"
+        app:layout_constraintTop_toBottomOf="@+id/aCTtrasmision" />
+
+    <EditText
+        android:id="@+id/edtPrecioContado"
+        android:layout_width="151dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/Pc"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/edtPrecioFinanciado"
+        app:layout_constraintEnd_toEndOf="@+id/edtPrecioFinanciado"
+        app:layout_constraintStart_toStartOf="@+id/edtPrecioFinanciado"
+        app:layout_constraintTop_toBottomOf="@+id/swFrenosABS" />
+
+    <Switch
+        android:id="@+id/swAireAcondiccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="@string/Air_Conditioning"
+        app:layout_constraintBaseline_toBaselineOf="@+id/swBolsasAire"
+        app:layout_constraintEnd_toStartOf="@+id/swBolsasAire"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/swFrenosABS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/abs"
+        app:layout_constraintBottom_toTopOf="@+id/edtPrecioContado"
+        app:layout_constraintStart_toStartOf="@+id/swAireAcondiccionado"
+        app:layout_constraintTop_toBottomOf="@+id/swBolsasAire" />
+
+    <EditText
+        android:id="@+id/edtModelo"
+        android:layout_width="213dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/Model"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/aCTmotor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aCTtipo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

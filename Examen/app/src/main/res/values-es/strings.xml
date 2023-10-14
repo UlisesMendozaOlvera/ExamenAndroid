@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="next">Próximo</string>
+    <string name="previous">Anterior</string>
+    <string name="Name">Nombre</string>
+    <string name="last_name">"Apellido "</string>
+    <string name="mother_l_m">Apellido de la madre</string>
+    <string name="address">Direccion</string>
+    <string name="brithdate">Fecha de nacimiento</string>
+    <string name="state">Estado</string>
+    <string name="Municipality">Municipio</string>
+    <string name="Save">Guardar</string>
+    <string name="Type">Tipo</string>
+    <string name="Model">Modelo</string>
+    <string name="Engine">Motor</string>
+    <string name="Transmission">Transmision</string>
+    <string name="Air_Conditioning">Aire acondicionado</string>
+    <string name="Airbags">Bolsas de Aire</string>
+    <string name="abs">Frenos con sistema ABS</string>
+    <string name="Pc">Precio contado</string>
+    <string name="Pf">Precio financiado</string>
+</resources>

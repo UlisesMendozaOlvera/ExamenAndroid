@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_fragment_to_fragment_agregar_vehiculo"
+        android:icon="@android:drawable/ic_menu_add"
+
+        android:title="Add Vehiculo"/>
+    <item
+        android:id="@+id/menu_fragment_to_fragment_agregar_cliente"
+        android:icon="@android:drawable/ic_menu_add"
+
+        android:title="Add Client"/>
+    <item
+        android:id="@+id/menu_fragment_to_fragment_lista_cliente"
+        android:icon="@android:drawable/ic_menu_add"
+
+        android:title="Client Catalog"/>
+    <item
+        android:id="@+id/menu_fragment_to_fragment_lista_vehiculos"
+        android:icon="@android:drawable/ic_menu_add"
+
+        android:title="Vehicle Catalog"/>
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaVehiculoFragment">
+    <fragment
+        android:id="@+id/listaVehiculoFragment"
+        android:name="com.example.examen.ListaVehiculoFragment"
+        android:label="Vehicle Catalog" >
+        <action
+            android:id="@+id/action_listaVehiculoFragment_to_agregarVehiculoFragment"
+            app:destination="@id/agregarVehiculoFragment" />
+        <action
+            android:id="@+id/action_listaVehiculoFragment_to_agregarClienteFragment"
+            app:destination="@id/agregarClienteFragment" />
+        <action
+            android:id="@+id/action_listaVehiculoFragment_to_listaClienteFragment"
+            app:destination="@id/listaClienteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarVehiculoFragment"
+        android:name="com.example.examen.AgregarVehiculoFragment"
+        android:label="Add Vehicle" >
+        <action
+            android:id="@+id/action_agregarVehiculoFragment_to_listaVehiculoFragment"
+            app:destination="@id/listaVehiculoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarClienteFragment"
+        android:name="com.example.examen.AgregarClienteFragment"
+        android:label="Add Client" >
+        <action
+            android:id="@+id/action_agregarClienteFragment_to_listaClienteFragment"
+            app:destination="@id/listaClienteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaClienteFragment"
+        android:name="com.example.examen.ListaClienteFragment"
+        android:label="Client Catalog" >
+        <action
+            android:id="@+id/action_listaClienteFragment_to_listaVehiculoFragment2"
+            app:destination="@id/listaVehiculoFragment" />
+    </fragment>
+</navigation>

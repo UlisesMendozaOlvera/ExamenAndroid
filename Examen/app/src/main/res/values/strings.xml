@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Name">Name</string>
+    <string name="last_name">last name</string>
+    <string name="mother_l_m">mother last name</string>
+    <string name="address">address</string>
+    <string name="brithdate">brithdate</string>
+    <string name="state">state</string>
+    <string name="Municipality">Municipality</string>
+    <string name="Save">Save</string>
+    <string name="Type">Type</string>
+    <string name="Model">Model</string>
+    <string name="Engine">Engine</string>
+    <string name="Transmission">Transmission</string>
+    <string name="Air_Conditioning">Air Conditioning</string>
+    <string name="Airbags">Airbags</string>
+    <string name="abs">Brakes with ABS system</string>
+    <string name="Pc">Counted Price</string>
+    <string name="Pf">Financed Price</string>
+
+
+
+</resources>
